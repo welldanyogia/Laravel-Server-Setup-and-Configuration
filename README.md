@@ -214,6 +214,7 @@ This tutorial will guide you through setting up a server with Nginx, PHP 8.3, Ma
     ```
 
 ### 9. Install Node.js using NVM
+[Link](https://nodejs.org/en/download/package-manager)
 
 1. **Install NVM (Node Version Manager)**:
     ```bash
