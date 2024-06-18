@@ -50,6 +50,8 @@ This tutorial will guide you through setting up a server with Nginx, PHP 8.3, Ma
     ```
 
 2. **Create Nginx configuration**:
+
+[Nginx Conf](WebranaConf.md)
     ```bash
     sudo ln -s /etc/nginx/sites-available/webrana.conf /etc/nginx/sites-enabled/
     sudo mkdir /var/www/webrana
