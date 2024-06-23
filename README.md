@@ -196,16 +196,16 @@ This tutorial will guide you through setting up a server with Nginx, PHP 8.3, Ma
 
 1. **Set directory permissions**:
     ```bash
-    sudo chown -R :www-data /var/www/jujujoki
-    sudo chmod -R gu+w /var/www/jujujoki/storage/
-    sudo chmod -R guo+w /var/www/jujujoki/storage/
-    sudo chmod -R gu+w /var/www/jujujoki/bootstrap/cache/
-    sudo chmod -R guo+w /var/www/jujujoki/bootstrap/cache/
+    sudo chown -R :www-data /var/www/webrana
+    sudo chmod -R gu+w /var/www/webrana/storage/
+    sudo chmod -R guo+w /var/www/webrana/storage/
+    sudo chmod -R gu+w /var/www/webrana/bootstrap/cache/
+    sudo chmod -R guo+w /var/www/webrana/bootstrap/cache/
     ```
 
 2. **Install dependencies and configure Laravel**:
     ```bash
-    cd /var/www/jujujoki
+    cd /var/www/webrana
     composer install --no-dev
     php artisan key:generate
     php artisan config:cache
