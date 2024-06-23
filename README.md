@@ -21,10 +21,8 @@ This tutorial will guide you through setting up a server with Nginx, PHP 8.3, Ma
 
 2. **Create Users**:
     ```bash
-    useradd webrana
-    useradd juju
+    adduser webrana
     passwd webrana
-    passwd juju
     ```
 
 3. **Add users to the sudo group**:
