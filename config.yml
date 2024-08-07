@@ -1,0 +1,18 @@
+debug: false
+uuid: 1a9178ee-f3b8-4d73-a081-5281e9962dfa
+token_id: xffbdx6TrhVQOKfy
+token: yX5pQQ0zb71XjNxku8Za8IkB0nz6OPjWdBlUMwSm9EJwN5YvdcamzzoxCs2nnKZ6
+api:
+  host: 0.0.0.0
+  port: 443
+  ssl:
+    enabled: true
+    cert: /etc/letsencrypt/live/node.webranastore.com/fullchain.pem
+    key: /etc/letsencrypt/live/node.webranastore.com/privkey.pem
+  upload_limit: 100
+system:
+  data: /var/lib/pterodactyl/volumes
+  sftp:
+    bind_port: 22
+allowed_mounts: []
+remote: 'https://bot.webranastore.com'
