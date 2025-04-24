@@ -56,6 +56,11 @@ This tutorial will guide you through setting up a server with Nginx, PHP 8.3, Ma
     sudo mkdir /var/www/webrana
     ```
 
+    ```bash
+    sudo ln -s /etc/nginx/sites-available/nusadaya.conf /etc/nginx/sites-enabled/
+    sudo mkdir /var/www/webrana
+    ```
+
 ### 3. Install SSL with Certbot
 
 1. **Install Certbot**:
@@ -133,6 +138,12 @@ This tutorial will guide you through setting up a server with Nginx, PHP 8.3, Ma
     GRANT ALL ON webrana.* TO webrana@localhost IDENTIFIED BY '13799454';
     ```
 
+    ```sql
+    CREATE DATABASE nusadaya;
+
+    GRANT ALL ON nusadaya.* TO nusadaya@localhost IDENTIFIED BY '13799454';
+    ```
+
 ### 6. Add Git Repository
 
 1. **Install Git**:
@@ -158,6 +169,10 @@ This tutorial will guide you through setting up a server with Nginx, PHP 8.3, Ma
     sudo git init --bare
     cd hooks
     sudo vi post-receive
+    ```
+
+     ```bash
+    sudo chown nusadaya:www-data /var/www/nusadaya
     ```
     Add the following content:
     ```sh
@@ -199,6 +214,14 @@ This tutorial will guide you through setting up a server with Nginx, PHP 8.3, Ma
     sudo chmod -R guo+w /var/www/webrana/storage/
     sudo chmod -R gu+w /var/www/webrana/bootstrap/cache/
     sudo chmod -R guo+w /var/www/webrana/bootstrap/cache/
+    ```
+
+    ```bash
+    sudo chown -R :www-data /var/www/nusadaya
+    sudo chmod -R gu+w /var/www/nusadaya/storage/
+    sudo chmod -R guo+w /var/www/nusadaya/storage/
+    sudo chmod -R gu+w /var/www/nusadaya/bootstrap/cache/
+    sudo chmod -R guo+w /var/www/nusadaya/bootstrap/cache/
     ```
 
 2. **Install dependencies and configure Laravel**:
