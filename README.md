@@ -58,7 +58,7 @@ This tutorial will guide you through setting up a server with Nginx, PHP 8.3, Ma
 
     ```bash
     sudo ln -s /etc/nginx/sites-available/nusadaya.conf /etc/nginx/sites-enabled/
-    sudo mkdir /var/www/webrana
+    sudo mkdir /var/www/nusadaya
     ```
 
 ### 3. Install SSL with Certbot
